@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest.Demo", "NUnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest.Demo.Test", "NUnitTest.Demo.Test\NUnitTest.Demo.Test.csproj", "{981C5390-C60D-459A-BC21-2D389D28E61A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlliteDemo", "SqlliteDemo\SqlliteDemo.csproj", "{09DB9D44-2E07-44F6-BD8B-A087970C4602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlliteDemo.MSTest", "SqlliteDemo.MSTest\SqlliteDemo.MSTest.csproj", "{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{981C5390-C60D-459A-BC21-2D389D28E61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{981C5390-C60D-459A-BC21-2D389D28E61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{981C5390-C60D-459A-BC21-2D389D28E61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09DB9D44-2E07-44F6-BD8B-A087970C4602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DB9D44-2E07-44F6-BD8B-A087970C4602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DB9D44-2E07-44F6-BD8B-A087970C4602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DB9D44-2E07-44F6-BD8B-A087970C4602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
