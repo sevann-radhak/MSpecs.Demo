@@ -7,14 +7,15 @@ namespace MSpecs.Demo.Tests
     [Subject(typeof(UserManager))]
     public class User_Id_Passed
     {
-        static UserManager Subject;
         static User User;
+        static UserManager Subject;
+        static IUserProvider UserProvider;
 
         Establish context = () =>
         {
-            var userProvider = A.Fake<IUserProvider>();
-            A.CallTo(() => userProvider.Get(A<int>._)).Returns(new User { Name = "Sevann Radhak" });
-            Subject = new UserManager(userProvider);
+            UserProvider = A.Fake<IUserProvider>();
+            A.CallTo(() => UserProvider.Get(A<int>._)).Returns(new User { Name = "Sevann Radhak" });
+            Subject = new UserManager(UserProvider);
         };
 
         Because of = () => User = Subject.Get(1);
@@ -23,6 +24,9 @@ namespace MSpecs.Demo.Tests
         
         It should_return_User_Name_as_Sevann_Radhak = () 
             => User.Name.ShouldBeEqualIgnoringCase("Sevann Radhak");
+
+        It should_call_userProvider_exactly_once = () 
+            => A.CallTo(() => UserProvider.Get(A<int>._)).MustHaveHappenedOnceExactly();
     }
 
     [Subject(typeof(UserManager))]
