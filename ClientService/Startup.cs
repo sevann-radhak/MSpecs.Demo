@@ -28,7 +28,7 @@ namespace ClientService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Soccer;Trusted_Connection=True;MultipleActiveResultSets=true"));
             services.AddControllers();
         }
 
