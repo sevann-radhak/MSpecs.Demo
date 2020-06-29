@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSpecs.Demo", "MSpecs.Demo\MSpecs.Demo.csproj", "{4851F380-E0EC-4149-9A69-DC8E2F624F1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSpecs.Demo", "MSpecs.Demo\MSpecs.Demo.csproj", "{4851F380-E0EC-4149-9A69-DC8E2F624F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSpecs.Demo.Tests", "MSpecs.Demo.Tests\MSpecs.Demo.Tests.csproj", "{C66E7492-7805-48BD-A7A0-BAFF75E82F37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSpecs.Demo.Tests", "MSpecs.Demo.Tests\MSpecs.Demo.Tests.csproj", "{C66E7492-7805-48BD-A7A0-BAFF75E82F37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest.Demo", "NUnitTest.Demo\NUnitTest.Demo.csproj", "{D12A05A6-237B-4858-A17B-4E2FF071E4F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTest.Demo", "NUnitTest.Demo\NUnitTest.Demo.csproj", "{D12A05A6-237B-4858-A17B-4E2FF071E4F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest.Demo.Test", "NUnitTest.Demo.Test\NUnitTest.Demo.Test.csproj", "{981C5390-C60D-459A-BC21-2D389D28E61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTest.Demo.Test", "NUnitTest.Demo.Test\NUnitTest.Demo.Test.csproj", "{981C5390-C60D-459A-BC21-2D389D28E61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlliteDemo", "SqlliteDemo\SqlliteDemo.csproj", "{09DB9D44-2E07-44F6-BD8B-A087970C4602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlliteDemo", "SqlliteDemo\SqlliteDemo.csproj", "{09DB9D44-2E07-44F6-BD8B-A087970C4602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlliteDemo.MSTest", "SqlliteDemo.MSTest\SqlliteDemo.MSTest.csproj", "{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlliteDemo.MSTest", "SqlliteDemo.MSTest\SqlliteDemo.MSTest.csproj", "{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Time.Management.Unit.Test", "Time.Management.Unit.Test\Time.Management.Unit.Test.csproj", "{140C79FC-E688-4928-BB8F-E9AEFBF5DC82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeManagement.Booking", "TimeManagement.Booking\TimeManagement.Booking.csproj", "{523515F0-19A8-4262-B6F3-2B4B5664A9D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C175DDE-E1A8-4C3B-8B89-4050379EBF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140C79FC-E688-4928-BB8F-E9AEFBF5DC82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140C79FC-E688-4928-BB8F-E9AEFBF5DC82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140C79FC-E688-4928-BB8F-E9AEFBF5DC82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140C79FC-E688-4928-BB8F-E9AEFBF5DC82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523515F0-19A8-4262-B6F3-2B4B5664A9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523515F0-19A8-4262-B6F3-2B4B5664A9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523515F0-19A8-4262-B6F3-2B4B5664A9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523515F0-19A8-4262-B6F3-2B4B5664A9D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

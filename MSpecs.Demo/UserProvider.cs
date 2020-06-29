@@ -1,8 +1,7 @@
 ﻿using Dapper;
-using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Text;
+using System.Linq;
 
 namespace MSpecs.Demo
 {
@@ -15,9 +14,18 @@ namespace MSpecs.Demo
             _connectionString = connectionString;
         }
 
+        public ICollection<User> Get()
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                return connection.Query<User>(
+                    $"SELECT Id, Name FROM User").ToList();
+            }
+        }
+
         public User Get(int id)
         {
-            using(var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 return connection.QueryFirstOrDefault<User>(
                     $"SELECT Id, Name FROM User WHERE id = {id}");

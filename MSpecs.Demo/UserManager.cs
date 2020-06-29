@@ -13,6 +13,11 @@ namespace MSpecs.Demo
             _userProvider = userProvider;
         }
 
+        public ICollection<User> Get()
+        {
+            return _userProvider.Get();
+        }
+
         public User Get(int id)
         {
             if (id <= 0) throw new ArgumentException("User id should be a positive integer");

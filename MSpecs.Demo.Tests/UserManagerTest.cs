@@ -1,6 +1,8 @@
 ﻿using FakeItEasy;
 using Machine.Specifications;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MSpecs.Demo.Tests
 {
@@ -27,7 +29,36 @@ namespace MSpecs.Demo.Tests
 
         It should_call_userProvider_exactly_once = () 
             => A.CallTo(() => UserProvider.Get(A<int>._)).MustHaveHappenedOnceExactly();
+
+        It should_be_User_type = () => User.ShouldBeOfExactType<User>();
     }
+
+    //[Subject(typeof(UserManager))]
+    //public class Users
+    //{
+    //    static List<User> User;
+    //    static UserManager Subject;
+    //    static IUserProvider UserProvider;
+
+    //    Establish context = () =>
+    //    {
+    //        UserProvider = A.Fake<IUserProvider>();
+    //        A.CallTo(() => UserProvider.Get().ShouldBeOfExactType<List<User>>());
+    //        Subject = new UserManager(UserProvider);
+    //    };
+
+    //    Because of = () => User = Subject.Get().ToList();
+
+    //    It should_return_a_non_null_User = () => User.ShouldNotBeNull();
+
+    //    //It should_return_User_Name_as_Sevann_Radhak = ()
+    //    //    => User.Name.ShouldBeEqualIgnoringCase("Sevann Radhak");
+
+    //    //It should_call_userProvider_exactly_once = ()
+    //    //    => A.CallTo(() => UserProvider.Get(A<int>._)).MustHaveHappenedOnceExactly();
+
+    //    //It should_be_User_type = () => User.ShouldBeOfExactType<User>();
+    //}
 
     [Subject(typeof(UserManager))]
     public class User_Id_Passed_Is_Negative_Integer
